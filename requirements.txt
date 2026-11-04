@@ -1,0 +1,10 @@
+# Runtime dependencies for the project series code
+pypdf            # reading, writing, merging, splitting, encrypting PDFs
+pillow           # image handling for the compress feature (Episode 4+)
+customtkinter    # the desktop GUI (Episode 3+)
+cryptography     # required by pypdf for AES-256 encryption (Episode 5+)
+
+# Sample generation only — the finished toolkit itself does NOT need this.
+# reportlab is used by make_samples.py / make_scan.py to create the
+# fictional practice PDFs.
+reportlab

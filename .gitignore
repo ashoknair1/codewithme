@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# PyInstaller output (Episode 6)
+dist/
+build/
+*.spec
+
+# Generated PDFs — recreate them any time:
+#   python make_samples.py            (invoice / receipts / rental contract)
+#   ep04.../python make_scan.py       (scanned contract)
+**/samples/*.pdf
+output/
+*.pdf
