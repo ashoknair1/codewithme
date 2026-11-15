@@ -1,0 +1,5 @@
+[
+  "tests/test_app.py::test_add_contact_requires_name",
+  "tests/test_app.py::test_bad_stage_and_missing_deal",
+  "tests/test_app.py::test_contact_then_deal_flow"
+]

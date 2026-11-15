@@ -1,0 +1,14 @@
+# Ep 3 — save as .github/workflows/ci.yml in the project repo.
+# The harness with no mood: runs the suite on every push and pull request.
+name: harness
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r project-series-03-ai-sdlc/project/requirements.txt
+      - run: python -m pytest -q project-series-03-ai-sdlc/project/tests
