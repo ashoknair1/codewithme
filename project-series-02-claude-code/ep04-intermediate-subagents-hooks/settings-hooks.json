@@ -1,0 +1,1 @@
+{"_comment":"Ep 4 — save as .claude/settings.json in your project. The hook runs the test suite after every file edit Claude Code makes.","hooks":{"PostToolUse":[{"hooks":[{"command":"python -m pytest -q 2>&1 | tail -5","type":"command"}],"matcher":"Edit|Write"}]}}
